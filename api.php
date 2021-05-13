@@ -33,7 +33,6 @@ class Api{
 
     function addLectura($lectura){
         $id=0;$fecha="";$tem=0;$pres=0;$vel=0;$dir=0;$sol=0;$uv=0;$hum=0;
-        
         foreach($lectura as $ls){
             global $id;$fecha;$tem;$pres;$vel;$dir;$sol;$uv;$hum;
             $id= $ls['id_estacion'];
