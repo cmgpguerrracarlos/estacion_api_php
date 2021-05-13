@@ -1,4 +1,9 @@
 POST http://localhost/JAVAEE/estacion/index.php HTTP/1.1
 content-type: application/json
 
-{"id_estacion":2,"fecha":"2021-05-18 12:30:33","temperatura":23.4,"presion":42.4,"velocidad_viento":34.60,"direccion_viento":0,"radiacion_solar":8,"radiacion_uv":4,"humedad":23.50}
+[{"id_estacion":5,"fecha":"2021-05-18 12:10:33","temperatura":23.4,"presion":42.4,"velocidad_viento":34.60,"direccion_viento":0,"radiacion_solar":8,"radiacion_uv":4,"humedad":23.50},
+{"id_estacion":5,"fecha":"2021-05-18 12:20:33","temperatura":25.4,"presion":42.4,"velocidad_viento":34.60,"direccion_viento":4,"radiacion_solar":8,"radiacion_uv":4,"humedad":23.50},
+{"id_estacion":5,"fecha":"2021-05-18 12:30:33","temperatura":43.4,"presion":42.4,"velocidad_viento":34.60,"direccion_viento":3,"radiacion_solar":8,"radiacion_uv":1,"humedad":23.50},
+{"id_estacion":5,"fecha":"2021-05-18 12:40:33","temperatura":20.3,"presion":42.4,"velocidad_viento":34.60,"direccion_viento":4,"radiacion_solar":8,"radiacion_uv":4,"humedad":23.50},
+{"id_estacion":5,"fecha":"2021-05-18 12:50:33","temperatura":19.0,"presion":42.4,"velocidad_viento":34.60,"direccion_viento":0,"radiacion_solar":8,"radiacion_uv":2,"humedad":23.50},
+{"id_estacion":5,"fecha":"2021-05-18 13:00:33","temperatura":23.4,"presion":42.4,"velocidad_viento":34.60,"direccion_viento":0,"radiacion_solar":8,"radiacion_uv":4,"humedad":23.50}]

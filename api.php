@@ -32,15 +32,24 @@ class Api{
     }
 
     function addLectura($lectura){
+        $id=0;$fecha="";$tem=0;$pres=0;$vel=0;$dir=0;$sol=0;$uv=0;$hum=0;
+        
+        foreach($lectura as $ls){
+            global $id;$fecha;$tem;$pres;$vel;$dir;$sol;$uv;$hum;
+            $id= $ls['id_estacion'];
+            $fecha=$ls['fecha'];
+            $tem+=$ls['temperatura'];
+            $pres+=$ls['presion'];
+            $vel+=$ls['velocidad_viento'];
+            $dir+=$ls['direccion_viento'];
+            $sol+=$ls['radiacion_solar'];
+            $uv+=$ls['radiacion_uv'];
+            $hum+=$ls['humedad'];
+        }
+        
+        
         $l = new Lectura();
-        return $l->setLectura($lectura['id_estacion'],
-        $lectura['fecha'],
-        $lectura['temperatura'],
-        $lectura['presion'],
-        $lectura['velocidad_viento'],
-        $lectura['direccion_viento'],
-        $lectura['radiacion_solar'],
-        $lectura['radiacion_uv'],
-        $lectura['humedad']);
+
+        return $l->setLectura( $id,$fecha,$tem/6,$pres/6,$vel/6,$dir/6,$sol/6,$uv/6,$hum/6);
     }
 }
