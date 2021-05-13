@@ -1,4 +1,4 @@
-POST http://localhost/JAVAEE/estacion/lecturaApi.php HTTP/1.1
+POST http://localhost/JAVAEE/estacion/index.php HTTP/1.1
 content-type: application/json
 
-{"id_estacion":10,"fecha":"2021-05-19","hora":"26:30:33","temperatura":"23","presion":"42.40","velocidad_viento":"34.60","direccion_viento":"norte","radiacion_solar":"alta","radiacion_uv":4,"humedad":"23.50"}
+{"id_estacion":2,"fecha":"2021-05-18 12:30:33","temperatura":23.4,"presion":42.4,"velocidad_viento":34.60,"direccion_viento":0,"radiacion_solar":8,"radiacion_uv":4,"humedad":23.50}

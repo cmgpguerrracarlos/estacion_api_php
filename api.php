@@ -2,8 +2,6 @@
 include_once './lectura.php';
 
 class Api{
-
-
     function getAll(){
         $lectura = new Lectura();
         $lecturas = array();
@@ -16,7 +14,6 @@ class Api{
                 $item=array(
                     "id_estacion" => $row['id_estacion'],
                     "fecha" => $row['fecha'],
-                    "hora" => $row['hora'],
                     "temperatura" => $row['temperatura'],
                     "presion" => $row['presion'],
                     "velocidad_viento" => $row['velocidad_viento'],
@@ -36,10 +33,8 @@ class Api{
 
     function addLectura($lectura){
         $l = new Lectura();
-        var_dump($lectura);
         return $l->setLectura($lectura['id_estacion'],
         $lectura['fecha'],
-        $lectura['hora'],
         $lectura['temperatura'],
         $lectura['presion'],
         $lectura['velocidad_viento'],
@@ -49,4 +44,3 @@ class Api{
         $lectura['humedad']);
     }
 }
-?>
