@@ -5,7 +5,7 @@ class Api{
     function getAll(){
         $lectura = new Lectura();
         $lecturas = array();
-        $lecturas["items"] = array();
+        // $lecturas["items"] = array();
 
         $res = $lectura->getLecturas();
 
@@ -22,7 +22,7 @@ class Api{
                     "radiacion_uv" => $row['radiacion_uv'],
                     "humedad" => $row['humedad']
                 );
-                array_push($lecturas["items"], $item);
+                array_push($lecturas, $item);
             }
         
             echo json_encode($lecturas);
