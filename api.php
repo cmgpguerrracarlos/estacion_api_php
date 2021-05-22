@@ -51,4 +51,5 @@ class Api{
 
         return $l->setLectura( $id,$fecha,$tem/6,$pres/6,$vel/6,$dir/6,$sol/6,$uv/6,$hum/6);
     }
+
 }
