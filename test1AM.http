@@ -1,0 +1,40 @@
+POST http://localhost/JAVAEE/estacion/index.php HTTP/1.1
+content-type: application/json
+
+
+
+# DATOS DE LA HORA 1 AM
+# [{"id_estacion":1,"fecha":"2021-05-21 01:10:00","temperatura":23.4,"presion":42.4,"velocidad_viento":14.60,"direccion_viento":0,"radiacion_solar":8,"radiacion_uv":4,"humedad":3.60},
+# {"id_estacion":1,"fecha":"2021-05-21 01:20:00","temperatura":25.4,"presion":42.4,"velocidad_viento":4.60,"direccion_viento":4,"radiacion_solar":8,"radiacion_uv":4,"humedad":2.10},
+# {"id_estacion":1,"fecha":"2021-05-21 01:30:00","temperatura":23.4,"presion":52.4,"velocidad_viento":34.60,"direccion_viento":3,"radiacion_solar":1,"radiacion_uv":1,"humedad":2.50},
+# {"id_estacion":1,"fecha":"2021-05-21 01:40:00","temperatura":24.3,"presion":22.4,"velocidad_viento":3.50,"direccion_viento":4,"radiacion_solar":8,"radiacion_uv":4,"humedad":3.50},
+# {"id_estacion":1,"fecha":"2021-05-21 01:50:00","temperatura":21.0,"presion":42.6,"velocidad_viento":34.20,"direccion_viento":0,"radiacion_solar":8,"radiacion_uv":2,"humedad":23.50},
+# {"id_estacion":1,"fecha":"2021-05-21 02:00:00","temperatura":23.4,"presion":12.4,"velocidad_viento":34.60,"direccion_viento":0,"radiacion_solar":8,"radiacion_uv":4,"humedad":23.50}]
+
+# [{"id_estacion":2,"fecha":"2021-05-21 01:10:00","temperatura":23.4,"presion":42.4,"velocidad_viento":14.60,"direccion_viento":0,"radiacion_solar":8,"radiacion_uv":4,"humedad":3.60},
+# {"id_estacion":2,"fecha":"2021-05-21 01:20:00","temperatura":25.4,"presion":42.4,"velocidad_viento":4.60,"direccion_viento":4,"radiacion_solar":8,"radiacion_uv":4,"humedad":2.10},
+# {"id_estacion":2,"fecha":"2021-05-21 01:30:00","temperatura":23.4,"presion":52.4,"velocidad_viento":34.60,"direccion_viento":3,"radiacion_solar":1,"radiacion_uv":1,"humedad":2.50},
+# {"id_estacion":2,"fecha":"2021-05-21 01:40:00","temperatura":22.3,"presion":22.4,"velocidad_viento":3.50,"direccion_viento":4,"radiacion_solar":8,"radiacion_uv":4,"humedad":3.50},
+# {"id_estacion":2,"fecha":"2021-05-21 01:50:00","temperatura":21.0,"presion":42.6,"velocidad_viento":34.20,"direccion_viento":0,"radiacion_solar":8,"radiacion_uv":2,"humedad":23.50},
+# {"id_estacion":2,"fecha":"2021-05-21 02:00:00","temperatura":23.4,"presion":12.4,"velocidad_viento":34.60,"direccion_viento":0,"radiacion_solar":8,"radiacion_uv":4,"humedad":23.50}]
+
+# [{"id_estacion":3,"fecha":"2021-05-21 01:10:00","temperatura":21.4,"presion":42.4,"velocidad_viento":14.60,"direccion_viento":0,"radiacion_solar":8,"radiacion_uv":4,"humedad":3.60},
+# {"id_estacion":3,"fecha":"2021-05-21 01:20:00","temperatura":21.4,"presion":42.4,"velocidad_viento":4.60,"direccion_viento":4,"radiacion_solar":8,"radiacion_uv":4,"humedad":2.10},
+# {"id_estacion":3,"fecha":"2021-05-21 01:30:00","temperatura":21.4,"presion":52.4,"velocidad_viento":34.60,"direccion_viento":3,"radiacion_solar":1,"radiacion_uv":1,"humedad":2.50},
+# {"id_estacion":3,"fecha":"2021-05-21 01:40:00","temperatura":21.3,"presion":22.4,"velocidad_viento":3.50,"direccion_viento":4,"radiacion_solar":8,"radiacion_uv":4,"humedad":3.50},
+# {"id_estacion":3,"fecha":"2021-05-21 01:50:00","temperatura":23.0,"presion":42.6,"velocidad_viento":34.20,"direccion_viento":0,"radiacion_solar":8,"radiacion_uv":2,"humedad":23.50},
+# {"id_estacion":3,"fecha":"2021-05-21 02:00:00","temperatura":23.4,"presion":12.4,"velocidad_viento":34.60,"direccion_viento":0,"radiacion_solar":8,"radiacion_uv":4,"humedad":23.50}]
+
+# [{"id_estacion":4,"fecha":"2021-05-21 01:10:00","temperatura":21.4,"presion":42.4,"velocidad_viento":14.60,"direccion_viento":0,"radiacion_solar":8,"radiacion_uv":4,"humedad":3.60},
+# {"id_estacion":4,"fecha":"2021-05-21 01:20:00","temperatura":23.4,"presion":42.4,"velocidad_viento":4.60,"direccion_viento":4,"radiacion_solar":8,"radiacion_uv":4,"humedad":2.10},
+# {"id_estacion":4,"fecha":"2021-05-21 01:30:00","temperatura":22.4,"presion":52.4,"velocidad_viento":34.60,"direccion_viento":3,"radiacion_solar":1,"radiacion_uv":1,"humedad":2.50},
+# {"id_estacion":4,"fecha":"2021-05-21 01:40:00","temperatura":21.3,"presion":22.4,"velocidad_viento":3.50,"direccion_viento":4,"radiacion_solar":8,"radiacion_uv":4,"humedad":3.50},
+# {"id_estacion":4,"fecha":"2021-05-21 01:50:00","temperatura":22.0,"presion":42.6,"velocidad_viento":34.20,"direccion_viento":0,"radiacion_solar":8,"radiacion_uv":2,"humedad":23.50},
+# {"id_estacion":4,"fecha":"2021-05-21 02:00:00","temperatura":22.4,"presion":12.4,"velocidad_viento":34.60,"direccion_viento":0,"radiacion_solar":8,"radiacion_uv":4,"humedad":23.50}]
+
+[{"id_estacion":5,"fecha":"2021-05-21 01:10:00","temperatura":21.4,"presion":42.4,"velocidad_viento":14.60,"direccion_viento":0,"radiacion_solar":8,"radiacion_uv":4,"humedad":3.60},
+{"id_estacion":5,"fecha":"2021-05-21 01:20:00","temperatura":23.4,"presion":42.4,"velocidad_viento":4.60,"direccion_viento":4,"radiacion_solar":8,"radiacion_uv":4,"humedad":2.10},
+{"id_estacion":5,"fecha":"2021-05-21 01:30:00","temperatura":22.4,"presion":52.4,"velocidad_viento":34.60,"direccion_viento":3,"radiacion_solar":1,"radiacion_uv":1,"humedad":2.50},
+{"id_estacion":5,"fecha":"2021-05-21 01:40:00","temperatura":22.3,"presion":22.4,"velocidad_viento":3.50,"direccion_viento":4,"radiacion_solar":8,"radiacion_uv":4,"humedad":3.50},
+{"id_estacion":5,"fecha":"2021-05-21 01:50:00","temperatura":22.0,"presion":42.6,"velocidad_viento":34.20,"direccion_viento":0,"radiacion_solar":8,"radiacion_uv":2,"humedad":23.50},
+{"id_estacion":5,"fecha":"2021-05-21 02:00:00","temperatura":21.4,"presion":12.4,"velocidad_viento":34.60,"direccion_viento":0,"radiacion_solar":8,"radiacion_uv":4,"humedad":23.50}]
